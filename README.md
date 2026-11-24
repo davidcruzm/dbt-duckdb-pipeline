@@ -13,8 +13,8 @@ An automated, open-source **dbt + DuckDB** analytics pipeline processing ~692k r
 | --- | --- | --- |
 | **dbt Pipeline** | sources → cleaned models → insight marts | [`analytics/models/`](analytics/models/) |
 | **Data Tests** | `unique` / `not_null` on every mart grain | [`schema.yml`](analytics/models/schema.yml) |
-| **Hosted dbt Docs** | Lineage, descriptions, column tests | [Live docs site](https://lukebarousse.github.io/dbt_Analytics_Engineering_Course/project1/) |
-| **Public CI** | Build + test + publish on every push | [Actions workflow](https://github.com/lukebarousse/dbt_Analytics_Engineering_Course/actions/workflows/dbt_build.yml) |
+| **Hosted dbt Docs** | Lineage, descriptions, column tests | [Live docs site](https://davidcruzm.github.io/dbt-duckdb-pipeline/) |
+| **Public CI** | Build + test + publish on every push | [Actions workflow](https://github.com/davidcruzm/dbt-duckdb-pipeline/actions/workflows/dbt_build.yml) |
 | **Environments** | local `dev` vs CI `prod` targets | [ci/profiles.yml](ci/profiles.yml) |
 | **Published Warehouse** | one `ATTACH`, queryable by anyone | [Query it](#query-the-published-warehouse) |
 
@@ -80,9 +80,7 @@ SELECT * FROM monthly_summary;
 
 Docs are generated with `dbt docs generate` and published to GitHub Pages:
 
-→
-
-**Fill this in a bit**
+→ **[davidcruzm.github.io/dbt-duckdb-pipeline/](https://davidcruzm.github.io/dbt-duckdb-pipeline/)**
 
 The site shows:
 
